@@ -1602,6 +1602,7 @@ footer a {
     margin: auto;
     max-width: 680px;
     width: 100%;
+    margin-top: 40px;
 }
 
 /* <!-- ======================== @media ======================== --> */
