@@ -1597,12 +1597,16 @@ footer a {
     gap: 20px;
 }
 
-.about-website-footer-text {
+
+.div-about-footer{
     text-align: center;
     margin: auto;
     max-width: 680px;
     width: 100%;
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 /* <!-- ======================== @media ======================== --> */
