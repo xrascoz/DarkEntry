@@ -147,7 +147,6 @@ if (xRequestDemo) {
     }
     return false;
   }
-
 }
 
 // <!-- ======================== Register Div Pop   ======================== -->
@@ -195,7 +194,7 @@ if (formRequestDemo) {
       inputCardDivChild.forEach(element => {
         element.value = ""
       });
-    }, 3000);
+    }, 10000);
 
   })
 }

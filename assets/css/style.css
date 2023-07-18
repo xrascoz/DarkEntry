@@ -113,7 +113,6 @@ img {
 
 .card {
     text-align: center;
-    text-transform: capitalize;
     padding: 10px;
     border-radius: 10px;
     position: relative;
@@ -674,7 +673,7 @@ input::-ms-input-placeholder {
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
-    text-transform: capitalize;
+
 }
 
 /* ======================== title-sec ======================== */
@@ -1452,7 +1451,6 @@ input {
     -webkit-text-fill-color: transparent;
     padding-left: var(--padding);
     padding-right: var(--padding);
-    text-transform: capitalize;
 }
 
 .card-div.hacked::after {
@@ -1467,6 +1465,11 @@ input {
 }
 
 
+
+.error-text {
+    text-transform: capitalize;
+    color: #ff7777 !important;
+}
 
 
 
