@@ -198,3 +198,12 @@ if (formRequestDemo) {
 
   })
 }
+
+
+// <!-- ======================== alert error   ======================== -->
+
+let alertError = document.querySelector(".alert-error")
+
+setTimeout(() => {
+  alertError.classList.remove("active")
+}, 5000);
