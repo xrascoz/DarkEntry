@@ -1,6 +1,4 @@
 
-
-
 // <!-- ======================== Toggle Why Us Sec ======================== --> 
 
 const cardWhyUs = document.querySelectorAll(".card-why-us");
@@ -204,6 +202,9 @@ if (formRequestDemo) {
 
 let alertError = document.querySelector(".alert-error")
 
-setTimeout(() => {
-  alertError.classList.remove("active")
-}, 5000);
+if(alertError) {
+  setTimeout(() => {
+    alertError.classList.remove("active")
+  }, 5000);
+}
+
