@@ -8,7 +8,7 @@
     text-decoration: none;
     list-style: none;
     font-family: "Inter", sans-serif;
-}
+} 
 
 /* <!-- ======================== Root ======================== --> */
 :root {
@@ -1251,7 +1251,7 @@ button {
 .div-pop .button {
     width: 100%;
     margin-top: 10px;
-    position: relative;
+    position: relative;   
 }
 
 .email-send-div .pop-div-text::after,
