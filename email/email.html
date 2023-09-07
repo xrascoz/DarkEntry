@@ -11,12 +11,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <style type="text/css" media="print">
+        @page {
+            size: auto;
+            margin: 10mm;
+
+        }
+        
+    </style>
+
 </head>
 
 <body>
 
 
-    <section class="cover-section">
+    <section class="cover-section" style="page-break-after: always">
         <div class="img-cover">
             <img src="assets/img/earth.jpg" alt="img-cover">
         </div>
@@ -46,7 +55,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section style="page-break-after: always">
         <div class="container">
             <div class="logo-section-div">
                 <img src="assets/logo/logo.png" alt="logo" class="logo-section">
@@ -87,7 +96,7 @@
             </div>
         </div>
     </section>
-    <section id="section-introduction">
+    <section id="section-introduction" style="page-break-after: always">
         <div class="container">
             <div class="logo-section-div">
                 <img src="assets/logo/logo.png" alt="logo" class="logo-section">
@@ -95,19 +104,23 @@
             <h1>1. INTRODUCTION</h1>
 
             <p class="p-text">
-                <b> At Dark Entry</b>, we understand the critical importance of staying one step ahead of cyber threats.
+                <b> At Dark Entry</b>, we understand the critical importance of staying one step ahead of cyber
+                threats.
                 With
-                our extensive expertise and a dedicated team of cybersecurity professionals, we offer a wide range of
+                our extensive expertise and a dedicated team of cybersecurity professionals, we offer a wide range
+                of
                 services tailored to meet the unique requirements of businesses across various industries.
             </p>
             <p class="p-text">
-                Within our Dark Web monitoring service, we don’t just focus on the dark web itself, but we expand our
+                Within our Dark Web monitoring service, we don’t just focus on the dark web itself, but we expand
+                our
                 service to cover the Surface, Deep and Dark web. This includes Hacking Forums, public source code
                 repositories, Paste Sites, Private Clouds, Telegram, Discord, and Tor websites.
             </p>
             <img src="assets/img/sheld.svg" alt="sheld" class="img-section">
             <p class="p-text">
-                Thank you for considering <b>Dark Entry</b> as your trusted partner in cybersecurity. Together, we can
+                Thank you for considering <b>Dark Entry</b> as your trusted partner in cybersecurity. Together, we
+                can
                 fortify
                 your organization's defenses, mitigate risks, and empower you to navigate the digital landscape with
                 confidence.
@@ -123,8 +136,7 @@
             </div>
         </div>
     </section>
-
-    <section id="section-methodology">
+    <section id="section-methodology" style="page-break-after: always">
         <div class="container">
             <div class="logo-section-div">
                 <img src="assets/logo/logo.png" alt="logo" class="logo-section">
@@ -150,7 +162,7 @@
             </div>
         </div>
     </section>
-    <section id="section-password-trends">
+    <section id="section-password-trends" style="page-break-after: always">
         <div class="container">
             <div class="logo-section-div">
                 <img src="assets/logo/logo.png" alt="logo" class="logo-section">
@@ -160,7 +172,8 @@
             <p class="p-text">
                 Password trends are useful to analyze the most used passwords by the company clients, but are also
                 useful to identify
-                weak password policies too. By analyzing the leaked credentials, we identified the following top Five
+                weak password policies too. By analyzing the leaked credentials, we identified the following top
+                Five
                 used passwords:
             </p>
 
@@ -203,7 +216,7 @@
                     <span class="analytics-footer-span analytics-span-5">123qweasdzxc@zad</span>
                 </div>
             </div>
-          
+
 
             <h1 id="section-statistics">4. STATISTICS </h1>
             <p class="p-text">
@@ -220,7 +233,7 @@
             </div>
         </div>
     </section>
-    <section class="cover-section" id="section-mitigation-plan">
+    <section class="cover-section" id="section-mitigation-plan" style="page-break-after: always">
         <div class="img-cover">
             <img src="assets/img/hack.jpeg" alt="img-cover">
         </div>
@@ -238,7 +251,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section style="page-break-after: always">
         <div class="container">
             <div class="logo-section-div">
                 <img src="assets/logo/logo.png" alt="logo" class="logo-section">
@@ -310,7 +323,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section style="page-break-after: always">
         <div class="container" id="clients">
             <div class="logo-section-div">
                 <img src="assets/logo/logo.png" alt="logo" class="logo-section">
@@ -378,7 +391,7 @@
             </div>
         </div>
     </section>
-    <section id="contact-us">
+    <section id="contact-us" style="page-break-after: always">
         <div class="container">
             <div class="logo-section-div">
                 <img src="assets/logo/logo.png" alt="logo" class="logo-section">
@@ -404,6 +417,17 @@
             </div>
         </div>
     </section>
+    
+        <button id="download-button" class="download-button">Download as PDF</button>
+    
+    <script>
+        const button = document.getElementById("download-button");
+        function generatePDF() {
+            window.print()
+        }
+        button.addEventListener("click", generatePDF);
+    </script>
+
 </body>
 
 </html>

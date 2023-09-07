@@ -23,8 +23,11 @@ html {
 }
 body {
   background-color: var(--background-color);
+  position: relative;
 }
-section {
+
+section,
+.section {
   max-width: 816px;
   margin: 0px auto;
   min-height: 890px;
@@ -95,6 +98,8 @@ ul ul {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .info-section a {
   color: var(--wight-color);
@@ -237,4 +242,27 @@ ul ul li {
 }
 .square-5 {
   background: #ff0000;
+}
+
+@media print {
+  body {
+    background-color: #fff;
+  }
+  #download-button {
+    display: none;
+  }
+}
+
+
+.download-button{
+  padding: 20px;
+  background: var(--main-color);
+  color: var(--wight-color);
+  font-size: 18px;
+  width: 100%;
+  max-width: 816px;
+  margin: auto;
+  margin: 50px auto;
+  display: block;
+  cursor: pointer;
 }
