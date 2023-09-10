@@ -204,7 +204,9 @@ img {
 body {
     background-color: var(--background-color);
     color: var(--wight-color);
-    overflow-x: clip;
+    /* overflow-x: clip; */
+    margin: 0 auto;
+    position: relative;
 }
 
 .container {
