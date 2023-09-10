@@ -1902,17 +1902,16 @@ footer a {
 
 @media (max-width: 768px) {
     .earth-img {
-        display: none;
+        /* display: none; */
     }
 
     .main-sec {
-        height: initial !important;
-
+        /* height: initial !important; */
     }
 
     .main-sec::before,
     .main-sec::after {
-        background: transparent;
+        /* background: transparent; */
     }
 
     .register {

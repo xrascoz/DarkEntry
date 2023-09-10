@@ -11,21 +11,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <style type="text/css" media="print">
-        @page {
-            size: auto;
-            margin: 10mm;
-
-        }
-        
-    </style>
+ 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
 
 </head>
 
 <body>
 
 
-    <section class="cover-section" style="page-break-after: always">
+    <section class="cover-section" >
         <div class="img-cover">
             <img src="assets/img/earth.jpg" alt="img-cover">
         </div>
@@ -55,7 +50,7 @@
             </div>
         </div>
     </section>
-    <section style="page-break-after: always">
+    <section >
         <div class="container">
             <div class="logo-section-div">
                 <img src="assets/logo/logo.png" alt="logo" class="logo-section">
@@ -96,7 +91,7 @@
             </div>
         </div>
     </section>
-    <section id="section-introduction" style="page-break-after: always">
+    <section id="section-introduction" >
         <div class="container">
             <div class="logo-section-div">
                 <img src="assets/logo/logo.png" alt="logo" class="logo-section">
@@ -136,7 +131,7 @@
             </div>
         </div>
     </section>
-    <section id="section-methodology" style="page-break-after: always">
+    <section id="section-methodology" >
         <div class="container">
             <div class="logo-section-div">
                 <img src="assets/logo/logo.png" alt="logo" class="logo-section">
@@ -162,7 +157,7 @@
             </div>
         </div>
     </section>
-    <section id="section-password-trends" style="page-break-after: always">
+    <section id="section-password-trends" >
         <div class="container">
             <div class="logo-section-div">
                 <img src="assets/logo/logo.png" alt="logo" class="logo-section">
@@ -233,7 +228,7 @@
             </div>
         </div>
     </section>
-    <section class="cover-section" id="section-mitigation-plan" style="page-break-after: always">
+    <section class="cover-section" id="section-mitigation-plan" >
         <div class="img-cover">
             <img src="assets/img/hack.jpeg" alt="img-cover">
         </div>
@@ -251,7 +246,7 @@
             </div>
         </div>
     </section>
-    <section style="page-break-after: always">
+    <section >
         <div class="container">
             <div class="logo-section-div">
                 <img src="assets/logo/logo.png" alt="logo" class="logo-section">
@@ -323,7 +318,7 @@
             </div>
         </div>
     </section>
-    <section style="page-break-after: always">
+    <section >
         <div class="container" id="clients">
             <div class="logo-section-div">
                 <img src="assets/logo/logo.png" alt="logo" class="logo-section">
@@ -391,7 +386,7 @@
             </div>
         </div>
     </section>
-    <section id="contact-us" style="page-break-after: always">
+    <section id="contact-us" >
         <div class="container">
             <div class="logo-section-div">
                 <img src="assets/logo/logo.png" alt="logo" class="logo-section">
@@ -420,14 +415,31 @@
     
         <button id="download-button" class="download-button">Download as PDF</button>
     
-    <script>
-        const button = document.getElementById("download-button");
-        function generatePDF() {
-            window.print()
-        }
-        button.addEventListener("click", generatePDF);
-    </script>
-
+   
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const downloadButton = document.getElementById("download-button");
+        
+                downloadButton.addEventListener("click", function () {
+                    window.jsPDF = window.jspdf.jsPDF
+                    const pdf = new jsPDF();
+        
+                    const sections = document.querySelectorAll("section");
+                    sections.forEach(function (section, index) {
+                        if (index !== 0) {
+                            pdf.addPage();
+                        }
+                        pdf.html(section, {
+                            callback: function () {
+                                if (index === sections.length - 1) {
+                                    pdf.save("dark_entry_report.pdf");
+                                }
+                            },
+                        });
+                    });
+                });
+            });
+        </script>
 </body>
 
 </html>
