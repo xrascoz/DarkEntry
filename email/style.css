@@ -30,11 +30,18 @@ section,
 .section {
   max-width: 816px;
   margin: 0px auto;
-  min-height: 890px;
+  /* min-height: 890px; */
   position: relative;
   margin-top: 50px;
   background-color: var(--wight-color);
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
+}
+/* .font-small-section {
+  font-size: 14px;
+} */
+
+.contant{
+  min-height: 890px;
 }
 .container {
   width: 80%;
@@ -50,21 +57,25 @@ ul {
   list-style: inside;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 5px;
 }
 ul ul {
   padding-left: 40px;
-  margin: 20px 0;
+  margin: 5px 0;
 }
 
 .p-text {
-  margin: 15px 0;
+  margin: 5px 0;
 }
 
 .img-section {
   width: 80%;
-  margin: auto;
+  margin: 10px auto;
   display: block;
+  margin-: 15px;
+}
+.sheld-img {
+  width: 300px;
 }
 
 /* ======================== First Section ======================== */
@@ -72,6 +83,7 @@ ul ul {
   background-color: var(--Dark-color);
   color: var(--wight-color);
 }
+
 .img-cover {
   overflow: hidden;
   height: 380px;
@@ -109,14 +121,15 @@ ul ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   width: 100%;
   left: 50%;
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
   background: var(--wight-color);
   color: var(--Dark-color);
   padding: 20px;
+  z-index: 5555;
 }
 
 /* ======================== Second Section ======================== */
@@ -130,20 +143,22 @@ ul ul li {
 
 .logo-section {
   width: 100px;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 .logo-section-div {
   position: relative;
-  margin-bottom: 29px;
+  margin-bottom: 8px;
 }
 .logo-section-div::after {
   content: "";
   position: absolute;
   left: 0;
-  width: 290px;
+  width: 100%;
+  max-width: 290px;
   height: 10px;
   background-color: var(--main-color);
   bottom: 0;
+  
 }
 
 /* ======================== analytics-img-div ======================== */
