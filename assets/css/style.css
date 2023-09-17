@@ -8,7 +8,7 @@
     text-decoration: none;
     list-style: none;
     font-family: "Inter", sans-serif;
-} 
+}
 
 /* <!-- ======================== Root ======================== --> */
 :root {
@@ -836,6 +836,8 @@ input::-ms-input-placeholder {
     align-items: center;
 }
 
+
+
 @media screen and (max-width: 1000px) {
     .timeline::after {
         left: 31px;
@@ -876,6 +878,17 @@ input::-ms-input-placeholder {
 
     .content-timeline {
         padding: 30px 15px;
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .h1-text-div {
+        margin-top: 116px !important;
+        margin-bottom: 30px !important;
+    }
+    .h1-text {
+        margin-bottom: 15px;
     }
 }
 
@@ -1253,7 +1266,7 @@ button {
 .div-pop .button {
     width: 100%;
     margin-top: 10px;
-    position: relative;   
+    position: relative;
 }
 
 .email-send-div .pop-div-text::after,
@@ -1502,6 +1515,7 @@ input {
     animation: moving 1s ease-in-out infinite;
     ;
 }
+
 .loader.disabled {
     display: none;
 }
