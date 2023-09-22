@@ -1257,6 +1257,9 @@ button {
     margin: auto;
 }
 
+.subscribe-alert .img-card-pop-email {
+    background: #6bc9b64d;
+}
 .img-card-pop-email img {
     width: 70%;
 }
@@ -1355,6 +1358,9 @@ input {
 .pop-div-text .h1-text {
     margin: 0;
     padding-bottom: 0;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+
 }
 
 .pop-div-text.h1-text::after {
@@ -1757,6 +1763,33 @@ footer a {
     flex-direction: column;
     gap: 35px;
 }
+
+.subscription-form {
+    display: flex;
+    padding: 10px;
+    background: var(--card-color);
+    border-radius: 60px;
+
+    background: var(--Dark2-color-hover);
+  }
+  
+
+  
+  .subscription-form button {
+    flex-shrink: 0;
+    min-width: fit-content;
+    cursor: pointer;
+    background: var(--main-color);
+    color: white;
+    border-radius: 60px;
+    padding: 10px 20px;
+  }
+
+  .subscribe-form-div{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+  }
 
 /* <!-- ======================== @media ======================== --> */
 

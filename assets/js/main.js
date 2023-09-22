@@ -166,6 +166,17 @@ if (registerDiv) {
 }
 
 
+// <!-- ======================== Subscribe Alert   ======================== -->
+
+
+const subscribeAlert = document.querySelector(".subscribe-alert")
+const xSubscribePop = document.querySelector(".x-subscribe-pop")
+
+xSubscribePop.addEventListener("click", () => {
+  subscribeAlert.classList.remove("active");
+})
+
+
 
 
 // <!-- ======================== Form Request Demo   ======================== -->
@@ -202,7 +213,7 @@ if (formRequestDemo) {
 
 let alertError = document.querySelector(".alert-error")
 
-if(alertError) {
+if (alertError) {
   setTimeout(() => {
     alertError.classList.remove("active")
   }, 5000);
