@@ -1,0 +1,24 @@
+<svg width="108" height="117" viewBox="0 0 108 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M54 33.2L83.3091 50.2181V84.2545L54 101.273L24.6909 84.2545L24.6909 50.2181L54 33.2Z" fill="url(#paint0_linear_615_280)"/>
+<path d="M54 114.509L94.6545 90.8727V43.6L54 19.9636L13.3455 43.6V90.8727L54 114.509ZM54 114.509V66.7636" stroke="#243AFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21.3818 108.364L2 96.4777V38.3075L21.3818 26.1091" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M25.6364 28.4727C28.2472 28.4727 30.3636 26.3563 30.3636 23.7455C30.3636 21.1347 28.2472 19.0182 25.6364 19.0182C23.0256 19.0182 20.9091 21.1347 20.9091 23.7455C20.9091 26.3563 23.0256 28.4727 25.6364 28.4727Z" stroke="white" stroke-width="3"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M25.6364 115.455C28.2472 115.455 30.3636 113.338 30.3636 110.727C30.3636 108.116 28.2472 106 25.6364 106C23.0256 106 20.9091 108.116 20.9091 110.727C20.9091 113.338 23.0256 115.455 25.6364 115.455Z" stroke="white" stroke-width="3"/>
+<path d="M86.6182 108.364L106 96.4777V38.3074L86.6182 26.5818" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M82.3636 28.4727C79.7528 28.4727 77.6364 26.3563 77.6364 23.7455C77.6364 21.1347 79.7528 19.0182 82.3636 19.0182C84.9744 19.0182 87.0909 21.1347 87.0909 23.7455C87.0909 26.3563 84.9744 28.4727 82.3636 28.4727Z" stroke="white" stroke-width="3"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M82.3636 115.455C79.7528 115.455 77.6364 113.338 77.6364 110.727C77.6364 108.116 79.7528 106 82.3636 106C84.9744 106 87.0909 108.116 87.0909 110.727C87.0909 113.338 84.9744 115.455 82.3636 115.455Z" stroke="white" stroke-width="3"/>
+<rect opacity="0.1" x="39" width="12" height="12" fill="#3CE1CD"/>
+<rect opacity="0.1" x="57" width="12" height="12" fill="#3CE1CD"/>
+<rect opacity="0.4" x="39" y="15" width="12" height="12" fill="#3CE1CD"/>
+<rect opacity="0.4" x="57" y="15" width="12" height="12" fill="#3CE1CD"/>
+<rect opacity="0.7" x="39" y="30" width="12" height="12" fill="#3CE1CD"/>
+<rect opacity="0.7" x="57" y="30" width="12" height="12" fill="#3CE1CD"/>
+<rect x="39" y="45" width="12" height="12" fill="#3CE1CD"/>
+<rect x="57" y="45" width="12" height="12" fill="#3CE1CD"/>
+<defs>
+<linearGradient id="paint0_linear_615_280" x1="54" y1="33.2" x2="54" y2="101.273" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3873FF"/>
+<stop offset="1" stop-color="#3873FF" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

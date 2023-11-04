@@ -813,7 +813,7 @@ input::-ms-input-placeholder {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     background: rgba(18, 21, 36, 0.40);
     width: 47%;
     box-shadow: inset 1px 1px 1px 0 rgb(21 24 49);
@@ -826,8 +826,8 @@ input::-ms-input-placeholder {
 .counter {
     width: 50px;
     height: 50px;
-    background-color: var(--card2-color);
-    background: var(--main-color);
+    background-color: #121524;
+    outline: 3px solid #161a33;
     border-radius: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -838,6 +838,7 @@ input::-ms-input-placeholder {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+
 }
 
 
@@ -891,11 +892,24 @@ input::-ms-input-placeholder {
         margin-top: 116px !important;
         margin-bottom: 30px !important;
     }
+
     .h1-text {
         margin-bottom: 15px;
     }
 }
 
+
+
+
+
+.img-counter-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.img-counter-div img {
+    width: 90px;
+}
 
 /* ======================== numbers-sec ======================== */
 
@@ -1260,6 +1274,7 @@ button {
 .subscribe-alert .img-card-pop-email {
     background: #6bc9b64d;
 }
+
 .img-card-pop-email img {
     width: 70%;
 }
@@ -1767,15 +1782,13 @@ footer a {
 .subscription-form {
     display: flex;
     padding: 10px;
-    background: var(--card-color);
     border-radius: 60px;
-
     background: var(--Dark2-color-hover);
-  }
-  
+}
 
-  
-  .subscription-form button {
+
+
+.subscription-form button {
     flex-shrink: 0;
     min-width: fit-content;
     cursor: pointer;
@@ -1783,13 +1796,13 @@ footer a {
     color: white;
     border-radius: 60px;
     padding: 10px 20px;
-  }
+}
 
-  .subscribe-form-div{
+.subscribe-form-div {
     display: flex;
     flex-direction: column;
     gap: 11px;
-  }
+}
 
 /* <!-- ======================== @media ======================== --> */
 
@@ -1957,18 +1970,7 @@ footer a {
 }
 
 @media (max-width: 768px) {
-    .earth-img {
-        /* display: none; */
-    }
 
-    .main-sec {
-        /* height: initial !important; */
-    }
-
-    .main-sec::before,
-    .main-sec::after {
-        /* background: transparent; */
-    }
 
     .register {
         padding: 10px 5px;
@@ -2048,33 +2050,33 @@ footer a {
 
 
 @media (max-width: 500px) {
-    h1, h2, h3, .title-arrow , .pop-div-text h1 {
-      font-size: 20px !important;
-      font-weight: 600 !important;
-  
+    h1, h2, h3, .title-arrow, .pop-div-text h1 {
+        font-size: 20px !important;
+        font-weight: 600 !important;
+
     }
-  
+
     .h1-text {
-      font-size: 56px !important;
+        font-size: 56px !important;
     }
-  
+
     p, a {
-      font-size: 16px !important;
-      color: var(--gray-color);
+        font-size: 16px !important;
+        color: var(--gray-color);
     }
-  
+
     .default-button {
-      font-size: 16px !important;
-      padding: 10px 15px !important;
-      font-weight: 300 !important;
+        font-size: 16px !important;
+        padding: 10px 15px !important;
+        font-weight: 300 !important;
     }
-  
+
     .main-button {
-      font-size: 16px !important;
-  
+        font-size: 16px !important;
+
     }
-  
+
     .company-div img {
-      width: 90% !important;
+        width: 90% !important;
     }
-  }
+}
