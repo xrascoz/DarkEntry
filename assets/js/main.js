@@ -219,3 +219,47 @@ if (alertError) {
   }, 5000);
 }
 
+
+
+// <!-- ======================== Counter ======================== -->
+
+
+
+const numbersSec = document.querySelector(".numbers-sec")
+const countUp = document.querySelectorAll(".js-count-up")
+
+let start = false
+
+window.addEventListener("scroll", () => {
+
+  if (window.scrollY >= numbersSec.offsetTop - 400) {
+
+    if (!start) {
+      const countUpFunc = (ele) => {
+        let value = ele.getAttribute("data-value")
+
+        const countInterval = setInterval(() => {
+          ele.textContent++
+
+          if (ele.textContent == value) {
+            clearInterval(countInterval)
+          }
+
+        }, 20 / value);
+
+      }
+      countUp.forEach((count) => countUpFunc(count))
+    }
+    start = true
+
+
+
+
+  }
+
+})
+
+
+
+
+
